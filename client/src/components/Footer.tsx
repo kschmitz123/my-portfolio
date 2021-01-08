@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export default function Footer() {
-  return <StyledFooter>@Kathrin Schmitz</StyledFooter>;
+  return <StyledFooter>@Kathrin Schmitz 2021</StyledFooter>;
 }
 const StyledFooter = styled.footer`
   background-color: var(--main-color);
