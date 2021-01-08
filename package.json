@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
+    "start": "cd client && react-scripts start",
+    "build": "cd client && react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/kschmitz123/my-portfolio/issues"
   },
-  "homepage": "https://github.com/kschmitz123/my-portfolio#readme"
+  "homepage": "https://github.com/kschmitz123/my-portfolio#readme",
+  "dependencies": {
+    "react-scripts": "^4.0.1"
+  }
 }
