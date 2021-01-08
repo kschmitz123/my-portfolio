@@ -10,4 +10,7 @@ const StyledFooter = styled.footer`
   color: white;
   display: grid;
   place-content: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 `;
