@@ -35,6 +35,7 @@ const Container = styled.div`
   color: white;
   height: 12rem;
   display: grid;
+  width: 100%;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr 1fr;
   padding: 1.2rem;
@@ -47,12 +48,10 @@ const Container = styled.div`
     grid-row: 1 / 3;
     justify-self: end;
   }
-  h2: {
-    justify-self: start;
-  }
-  h3 {
+  h3,
+  h2 {
     justify-self: end;
-    margin: 0;
+    margin-bottom: 0;
   }
 `;
 
