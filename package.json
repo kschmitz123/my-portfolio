@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/kschmitz123/my-portfolio#readme",
   "dependencies": {
-    "react-scripts": "^4.0.1"
+    "react-scripts": "^4.0.1",
+    "typescript": "^4.1.3"
   }
 }
