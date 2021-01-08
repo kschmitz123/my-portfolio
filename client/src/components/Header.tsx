@@ -5,9 +5,9 @@ import styled from "styled-components/macro";
 export default function Header() {
   return (
     <StyledHeader>
-      <Link to="">About</Link>
-      <Link to="">Projects</Link>
-      <Link to="">Contact</Link>
+      <Link to="/about">About</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/contact">Contact</Link>
     </StyledHeader>
   );
 }
@@ -18,6 +18,7 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 100%;
 
   a {
     text-decoration: none;
