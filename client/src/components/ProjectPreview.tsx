@@ -40,7 +40,7 @@ const Container = styled.div`
   place-items: center;
   margin: 2rem;
   padding: 1rem;
-  border-radius: 5%;
+  border-radius: 15px;
   box-shadow: 4px 8px 19px -6px rgba(0, 0, 0, 0.75);
   color: var(--main-color);
 
