@@ -10,7 +10,7 @@ export default function Jumbotron() {
     <>
       <Container>
         <h2>Hello there!</h2>
-        <h3> I'm Kathrin, an aspiring web developer. </h3>
+        <h3>Ich bin Kathrin, frisch gebackene Webentwicklerin.</h3>
         <img src={ImageSrc} alt="" />
       </Container>
       <Social>
@@ -50,8 +50,8 @@ const Container = styled.div`
   }
   h3,
   h2 {
-    justify-self: end;
     margin-bottom: 0;
+    text-align: right;
   }
 `;
 
