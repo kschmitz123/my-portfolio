@@ -1,5 +1,5 @@
 import React from "react";
-import gif from "../assets/frame_with_video.gif";
+import gif from "../assets/frame-with-video.gif";
 import styled from "styled-components/macro";
 import ListItems from "./ListItems";
 
