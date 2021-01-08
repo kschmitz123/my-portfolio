@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export default function Footer() {
-  return <StyledFooter>@Kathrin Schmitz</StyledFooter>;
+  return <StyledFooter>@Kathrin Schmitz 2021</StyledFooter>;
 }
 const StyledFooter = styled.footer`
   background-color: var(--main-color);
@@ -10,4 +10,7 @@ const StyledFooter = styled.footer`
   color: white;
   display: grid;
   place-content: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 `;

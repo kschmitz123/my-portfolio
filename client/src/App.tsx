@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Jumbotron from "./components/Jumbotron";
-import ProjectPreview from "./components/ProjectPreview";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Jumbotron />
-      <ProjectPreview />
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={About} />
       <Footer />
     </Router>
   );
