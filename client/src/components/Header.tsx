@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
 export default function Header() {
   return (
     <StyledHeader>
-      <Link to="/about">About</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/contact">Contact</Link>
+      <NavLink exact to="/" activeStyle={{ visibility: "hidden" }}>
+        Zurück
+      </NavLink>
+      <Link to="/about">Über mich</Link>
+      <Link to="/projects">Projekte</Link>
+      <Link to="/contact">Kontakt</Link>
     </StyledHeader>
   );
 }
@@ -24,5 +27,9 @@ const StyledHeader = styled.header`
     text-decoration: none;
     color: white;
     margin: 0.7rem;
+  }
+  a:first-of-type {
+    position: fixed;
+    left: 10px;
   }
 `;
