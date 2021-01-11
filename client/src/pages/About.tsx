@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import InfoBlock from "../components/InfoBlock";
-import experience from "../assets/CV";
+import experience from "../lib/CV";
 
 const Container = styled.div`
   margin-bottom: 60px;
