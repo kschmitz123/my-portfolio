@@ -1,38 +1,12 @@
-import React from "react";
-import gif from "../assets/frame-with-video.gif";
+import React, { ReactNode } from "react";
 import styled from "styled-components/macro";
-import ListItems from "./ListItems";
 
-export default function ProjectPreview() {
-  return (
-    <Container>
-      <img src={gif} alt="" />
-      <span>
-        <h3> CRAFTIFIED</h3>
-        <p>
-          For all DIY Geeks who seek inspiration for the next project or want to
-          upload their own to share it with the community.
-        </p>
-        <ListItems />
-        <div>
-          <a
-            href="https://github.com/kschmitz123/diy-project-app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Repository
-          </a>
-          <a
-            href="https://craftified.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            App
-          </a>
-        </div>
-      </span>
-    </Container>
-  );
+interface Children {
+  children: ReactNode;
+}
+
+export default function ProjectPreview({ children }: Children) {
+  return <Container>{children}</Container>;
 }
 const Container = styled.div`
   display: grid;
