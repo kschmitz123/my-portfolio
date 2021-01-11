@@ -21,6 +21,10 @@ const Container = styled.div`
   }
   img {
     margin-right: 10px;
+
+    :hover {
+      transform: scale(1.3);
+    }
   }
 `;
 
