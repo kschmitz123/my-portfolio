@@ -4,6 +4,7 @@ import Background from "../assets/background-test.png";
 
 interface Props {
   width?: string;
+  background?: string;
 }
 
 const Container = styled.div<Props>`
@@ -13,14 +14,20 @@ const Container = styled.div<Props>`
   color: var(--main-color);
   padding: 10px;
   margin: 30px;
-  background: url(${Background}) no-repeat center center fixed;
+  background: ${(props) =>
+    props.background || `url(${Background}) no-repeat center center fixed`};
 `;
 
 interface Children {
   children: ReactNode;
   width?: string;
+  background?: string;
 }
 
-export default function InfoBlock({ children, width }: Children) {
-  return <Container width={width}>{children}</Container>;
+export default function InfoBlock({ children, width, background }: Children) {
+  return (
+    <Container background={background} width={width}>
+      {children}
+    </Container>
+  );
 }
