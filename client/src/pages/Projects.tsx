@@ -7,7 +7,7 @@ import gif from "../assets/frame-with-video.gif";
 export default function Projects() {
   return (
     <>
-      <InfoBlock width={"95%"} background={"none"}>
+      <InfoBlock width={"95%"}>
         <h2>Tech Stack</h2>
         <ListItems />
       </InfoBlock>
