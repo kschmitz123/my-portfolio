@@ -3,17 +3,21 @@ import InfoBlock from "../components/InfoBlock";
 import GitHub from "../assets/GitHub-Mark-64px.png";
 import LinkedIn from "../assets/LI-In-Bug-64px.png";
 import Email from "../assets/email-64px.png";
+import ContactBackground from "../assets/undraw_contact.svg";
 import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url(${ContactBackground});
+  height: 100vh;
 
   div {
     display: flex;
     align-items: center;
     font-weight: bold;
+    background-color: #ffffffe8;
   }
   a {
     text-decoration: none;
