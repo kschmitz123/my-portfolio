@@ -61,5 +61,8 @@ const Social = styled.div`
 
   img {
     margin: 5px;
+    :hover {
+      transform: scale(1.3);
+    }
   }
 `;
