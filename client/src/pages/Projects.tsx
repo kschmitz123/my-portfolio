@@ -1,13 +1,16 @@
 import React from "react";
-import Jumbotron from "../components/Jumbotron";
+import InfoBlock from "../components/InfoBlock";
+import ListItems from "../components/ListItems";
 import ProjectPreview from "../components/ProjectPreview";
 import gif from "../assets/frame-with-video.gif";
-import ListItems from "../components/ListItems";
 
-export default function Home() {
+export default function Projects() {
   return (
-    <div>
-      <Jumbotron />
+    <>
+      <InfoBlock width={"95%"} background={"none"}>
+        <h2>Tech Stack</h2>
+        <ListItems />
+      </InfoBlock>
       <ProjectPreview>
         <img src={gif} alt="" />
         <span>
@@ -35,6 +38,7 @@ export default function Home() {
           </div>
         </span>
       </ProjectPreview>
-    </div>
+      <ProjectPreview>tba</ProjectPreview>
+    </>
   );
 }
