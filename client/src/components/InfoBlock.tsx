@@ -16,6 +16,10 @@ const Container = styled.div<Props>`
   margin: 30px;
   background: ${(props) =>
     props.background || `url(${Background}) no-repeat center center fixed`};
+
+  img {
+    margin: 0 20px;
+  }
 `;
 
 interface Children {
