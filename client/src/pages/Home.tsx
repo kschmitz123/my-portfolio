@@ -3,6 +3,7 @@ import Jumbotron from "../components/Jumbotron";
 import ProjectPreview from "../components/ProjectPreview";
 import gif from "../assets/frame-with-video.gif";
 import ListItems from "../components/ListItems";
+import { CraftifiedStack } from "../lib/Stack";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
             For all DIY Geeks who seek inspiration for the next project or want
             to upload their own to share it with the community.
           </p>
-          <ListItems />
+          <ListItems stack={CraftifiedStack} />
           <div>
             <a
               href="https://github.com/kschmitz123/diy-project-app"

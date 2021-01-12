@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <NavLink exact to="/" activeStyle={{ visibility: "hidden" }}>
-        Zurück
+        Zurück zur Startseite
       </NavLink>
       <Link to="/about">Über mich</Link>
       <Link to="/projects">Projekte</Link>
