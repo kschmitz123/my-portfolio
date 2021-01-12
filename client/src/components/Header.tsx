@@ -8,9 +8,9 @@ export default function Header() {
       <NavLink exact to="/" activeStyle={{ visibility: "hidden" }}>
         Zurück
       </NavLink>
-      <Link to="/about">Über mich</Link>
-      <Link to="/projects">Projekte</Link>
       <Link to="/contact">Kontakt</Link>
+      <Link to="/projects">Projekte</Link>
+      <Link to="/about">Über mich</Link>
     </StyledHeader>
   );
 }
