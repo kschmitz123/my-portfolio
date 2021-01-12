@@ -6,11 +6,11 @@ export default function Header() {
   return (
     <StyledHeader>
       <NavLink exact to="/" activeStyle={{ visibility: "hidden" }}>
-        Zurück zur Startseite
+        Zurück
       </NavLink>
-      <Link to="/about">Über mich</Link>
-      <Link to="/projects">Projekte</Link>
       <Link to="/contact">Kontakt</Link>
+      <Link to="/projects">Projekte</Link>
+      <Link to="/about">Über mich</Link>
     </StyledHeader>
   );
 }
@@ -18,18 +18,17 @@ export default function Header() {
 const StyledHeader = styled.header`
   background-color: var(--main-color);
   height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   width: 100%;
+  position: fixed;
+  top: 0;
 
   a {
+    float: right;
     text-decoration: none;
     color: white;
     margin: 0.7rem;
   }
   a:first-of-type {
-    position: fixed;
-    left: 10px;
+    float: left;
   }
 `;

@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+interface Props {
+  stack: string[];
+}
 export default function ListItems({ stack }: Props) {
   return (
     <List>
@@ -9,10 +12,6 @@ export default function ListItems({ stack }: Props) {
       ))}
     </List>
   );
-}
-
-interface Props {
-  stack: string[];
 }
 
 const List = styled.ul`

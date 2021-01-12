@@ -5,19 +5,6 @@ interface Props {
   width?: string;
 }
 
-const Container = styled.div<Props>`
-  border-radius: 15px;
-  box-shadow: 4px 8px 19px -6px rgba(0, 0, 0, 0.75);
-  width: ${(props) => props.width || "50%"};
-  color: var(--main-color);
-  padding: 10px;
-  margin: 30px;
-
-  img {
-    margin: 0 20px;
-  }
-`;
-
 interface Children {
   children: ReactNode;
   width?: string;
@@ -26,3 +13,16 @@ interface Children {
 export default function InfoBlock({ children, width }: Children) {
   return <Container width={width}>{children}</Container>;
 }
+
+const Container = styled.div<Props>`
+  border-radius: 15px;
+  box-shadow: 4px 8px 19px -6px rgba(0, 0, 0, 0.75);
+  width: ${(props) => props.width || "50%"};
+  color: var(--main-color);
+  padding: 10px;
+  margin: 20px;
+
+  img {
+    margin: 0 20px;
+  }
+`;
