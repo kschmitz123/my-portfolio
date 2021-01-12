@@ -4,10 +4,11 @@ import ProjectPreview from "../components/ProjectPreview";
 import gif from "../assets/frame-with-video.gif";
 import ListItems from "../components/ListItems";
 import { CraftifiedStack } from "../lib/Stack";
+import styled from "styled-components";
 
 export default function Home() {
   return (
-    <div>
+    <Container>
       <Jumbotron />
       <ProjectPreview>
         <img src={gif} alt="" />
@@ -36,6 +37,10 @@ export default function Home() {
           </div>
         </span>
       </ProjectPreview>
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  margin-bottom: 60px;
+`;
