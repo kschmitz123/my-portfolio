@@ -12,7 +12,7 @@ const Container = styled.div`
   align-items: center;
   background: url(${ContactBackground}) no-repeat center;
   height: 100vh;
-  margin-top: 45px;
+  margin-top: 50px;
 
   div {
     display: grid;
