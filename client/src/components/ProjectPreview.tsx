@@ -12,12 +12,11 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   place-items: center;
-  margin: 2rem;
+  margin: 1rem;
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 4px 8px 19px -6px rgba(0, 0, 0, 0.75);
   color: var(--main-color);
-  margin-bottom: 70px;
 
   a {
     border-radius: 15px;
