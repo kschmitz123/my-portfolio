@@ -11,7 +11,7 @@ const Container = styled.div<Props>`
   width: ${(props) => props.width || "50%"};
   color: var(--main-color);
   padding: 10px;
-  margin: 30px;
+  margin: 20px;
 
   img {
     margin: 0 20px;
