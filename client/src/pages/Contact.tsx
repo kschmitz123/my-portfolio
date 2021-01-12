@@ -12,10 +12,11 @@ const Container = styled.div`
   align-items: center;
   background: url(${ContactBackground}) no-repeat center;
   height: 100vh;
+  margin-top: 45px;
 
   div {
-    display: flex;
-    align-items: center;
+    display: grid;
+    place-items: center;
     font-weight: bold;
     background-color: #ffffffe8;
   }
@@ -28,6 +29,15 @@ const Container = styled.div`
 
     :hover {
       transform: scale(1.3);
+    }
+  }
+  @media (max-width: 400px) {
+    a:nth-child(even) {
+      display: none;
+    }
+    div {
+      margin: 10px;
+      width: 60%;
     }
   }
 `;
@@ -64,7 +74,9 @@ export default function Contact() {
         <a href="mailto:kathrin_schmitz93@gmx.de">
           <img src={Email} alt="Email Logo" />
         </a>
-        <p>kathrin_schmitz93 at gmx.de</p>
+        <a href="mailto:kathrin_schmitz93@gmx.de">
+          kathrin_schmitz93 at gmx.de
+        </a>
       </InfoBlock>
     </Container>
   );
