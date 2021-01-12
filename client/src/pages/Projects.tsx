@@ -4,11 +4,12 @@ import ListItems from "../components/ListItems";
 import ProjectPreview from "../components/ProjectPreview";
 import gif from "../assets/frame-with-video.gif";
 import { CraftifiedStack, TotalStack } from "../lib/Stack";
+import styled from "styled-components/macro";
 
 export default function Projects() {
   return (
-    <>
-      <InfoBlock width={"95%"}>
+    <Container>
+      <InfoBlock width={"80%"}>
         <h2>Tech Stack</h2>
         <ListItems stack={TotalStack} />
       </InfoBlock>
@@ -40,6 +41,12 @@ export default function Projects() {
         </span>
       </ProjectPreview>
       <ProjectPreview>tba</ProjectPreview>
-    </>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
