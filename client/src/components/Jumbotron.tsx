@@ -36,9 +36,10 @@ const Container = styled.div`
   height: 12rem;
   display: grid;
   width: 100%;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 1fr 1fr;
   padding: 1.2rem;
+  margin-top: 45px;
 
   img {
     height: 160px;
@@ -53,6 +54,16 @@ const Container = styled.div`
     margin-bottom: 0;
     text-align: right;
   }
+  @media (max-width: 400px) {
+    img {
+      height: 120px;
+      width: 120px;
+    }
+    h2,
+    h3 {
+      margin: 0;
+    }
+  } ;
 `;
 
 const Social = styled.div`
