@@ -40,6 +40,7 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   padding: 1.2rem;
   margin-top: 45px;
+  grid-gap: 0 30px;
 
   img {
     height: 160px;
@@ -47,7 +48,6 @@ const Container = styled.div`
     border-radius: 50%;
     grid-column: 2;
     grid-row: 1 / 3;
-    justify-self: end;
   }
   h3,
   h2 {
