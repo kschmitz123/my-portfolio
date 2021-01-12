@@ -10,7 +10,7 @@ export default function ProjectPreview({ children }: Children) {
 }
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   place-items: center;
   margin: 2rem;
   padding: 1rem;
@@ -30,4 +30,11 @@ const Container = styled.div`
   div {
     margin-top: 20px;
   }
+
+  @media (max-width: 400px) {
+    img {
+      width: 300px;
+      height: 500px;
+    }
+  } ;
 `;
