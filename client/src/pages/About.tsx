@@ -7,14 +7,14 @@ import Background from "../assets/background-test.png";
 export default function About() {
   return (
     <Container>
-      {experience.map((job) => (
-        <InfoBlock>
+      {experience.map((job, index) => (
+        <InfoBlock key={index}>
           <img src={job.img} alt="" />
           <h3>{job.title}</h3>
           <h4>{job.location}</h4>
           <span>
-            {job.info?.map((string) => (
-              <p>{string}</p>
+            {job.info?.map((string, index) => (
+              <p key={index}>{string}</p>
             ))}
           </span>
         </InfoBlock>
