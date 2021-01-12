@@ -5,12 +5,23 @@ import experience from "../lib/CV";
 import Background from "../assets/background-test.png";
 
 const Container = styled.div`
-  margin-bottom: 60px;
+  margin: 60px 0;
+  display: grid;
+  place-items: center;
+
   div {
     background: url(${Background}) no-repeat center center fixed;
+    width: 80%;
   }
-  div:nth-child(even) {
-    margin-left: auto;
+  @media (min-width: 400px) {
+    div:nth-child(even) {
+      justify-self: end;
+      width: 50%;
+    }
+    div:nth-child(odd) {
+      justify-self: start;
+      width: 50%;
+    }
   }
 `;
 
