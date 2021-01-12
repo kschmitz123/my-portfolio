@@ -6,42 +6,6 @@ import Email from "../assets/email-64px.png";
 import ContactBackground from "../assets/undraw_contact.svg";
 import styled from "styled-components";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url(${ContactBackground}) no-repeat center;
-  height: 100vh;
-  margin-top: 50px;
-
-  div {
-    display: grid;
-    place-items: center;
-    font-weight: bold;
-    background-color: #ffffffe8;
-  }
-  a {
-    text-decoration: none;
-    color: var(--main-color);
-  }
-  img {
-    margin-right: 10px;
-
-    :hover {
-      transform: scale(1.3);
-    }
-  }
-  @media (max-width: 400px) {
-    a:nth-child(even) {
-      display: none;
-    }
-    div {
-      margin: 10px;
-      width: 60%;
-    }
-  }
-`;
-
 export default function Contact() {
   return (
     <Container>
@@ -81,3 +45,39 @@ export default function Contact() {
     </Container>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(${ContactBackground}) no-repeat center;
+  height: 100vh;
+  margin-top: 50px;
+
+  div {
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    background-color: #ffffffe8;
+  }
+  a {
+    text-decoration: none;
+    color: var(--main-color);
+  }
+  img {
+    margin-right: 10px;
+
+    :hover {
+      transform: scale(1.3);
+    }
+  }
+  @media (max-width: 400px) {
+    a:nth-child(even) {
+      display: none;
+    }
+    div {
+      margin: 10px;
+      width: 60%;
+    }
+  }
+`;
