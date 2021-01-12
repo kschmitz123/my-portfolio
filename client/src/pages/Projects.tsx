@@ -3,13 +3,14 @@ import InfoBlock from "../components/InfoBlock";
 import ListItems from "../components/ListItems";
 import ProjectPreview from "../components/ProjectPreview";
 import gif from "../assets/frame-with-video.gif";
+import { CraftifiedStack, TotalStack } from "../lib/Stack";
 
 export default function Projects() {
   return (
     <>
       <InfoBlock width={"95%"}>
         <h2>Tech Stack</h2>
-        <ListItems />
+        <ListItems stack={TotalStack} />
       </InfoBlock>
       <ProjectPreview>
         <img src={gif} alt="" />
@@ -19,7 +20,7 @@ export default function Projects() {
             For all DIY Geeks who seek inspiration for the next project or want
             to upload their own to share it with the community.
           </p>
-          <ListItems />
+          <ListItems stack={CraftifiedStack} />
           <div>
             <a
               href="https://github.com/kschmitz123/diy-project-app"

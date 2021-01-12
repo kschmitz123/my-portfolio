@@ -1,29 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const Stack: string[] = [
-  "react",
-  "react router",
-  "react hook form",
-  "styled components",
-  "react query",
-  "node.js",
-  "express",
-  "mongoDB",
-  "cloudinary",
-  "heroku",
-  "git workflow",
-  "storybook",
-];
-
-export default function ListItems() {
+export default function ListItems({ stack }: Props) {
   return (
     <List>
-      {Stack.map((tool, index) => (
+      {stack.map((tool, index) => (
         <li key={index}>{tool}</li>
       ))}
     </List>
   );
+}
+
+interface Props {
+  stack: string[];
 }
 
 const List = styled.ul`
