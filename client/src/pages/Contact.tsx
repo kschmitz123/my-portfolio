@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(${ContactBackground});
+  background: url(${ContactBackground}) no-repeat center;
   height: 100vh;
 
   div {
