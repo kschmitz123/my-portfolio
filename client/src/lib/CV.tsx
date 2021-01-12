@@ -34,6 +34,11 @@ const experience: Object[] = [
     img: `${manage}`,
   },
   {
+    title: "Berufsbegleitendes Fernstudium Projektmanagement",
+    location: "09/18 – 08/19 | ILS Institut für Lernsysteme GmbH",
+    img: `${certificate}`,
+  },
+  {
     title: "OPERATIONS ASSISTANT",
     location: " 09/16 – 02/17 | Cactus Language, England",
     info: [
@@ -53,11 +58,6 @@ const experience: Object[] = [
     location: "09/13 – 08/17 | Technische Hochschule Köln",
     info: ["Schwerpunkt Kultur und Medien"],
     img: `${study}`,
-  },
-  {
-    title: "Berufsbegleitendes Fernstudium Projektmanagement",
-    location: "09/18 – 08/19 | ILS Institut für Lernsysteme GmbH",
-    img: `${certificate}`,
   },
 ];
 
