@@ -2,8 +2,9 @@ import React from "react";
 import InfoBlock from "../components/InfoBlock";
 import ListItems from "../components/ListItems";
 import ProjectPreview from "../components/ProjectPreview";
-import gif from "../assets/frame-with-video.gif";
-import { CraftifiedStack, TotalStack } from "../lib/Stack";
+import craftifiedGif from "../assets/frame-with-video.gif";
+import wishlistGif from "../assets/wishlist.gif";
+import { CraftifiedStack, TotalStack, WishlistStack } from "../lib/Stack";
 import styled from "styled-components/macro";
 
 export default function Projects() {
@@ -14,7 +15,7 @@ export default function Projects() {
         <ListItems stack={TotalStack} />
       </InfoBlock>
       <ProjectPreview>
-        <img src={gif} alt="" />
+        <img src={craftifiedGif} alt="" />
         <span>
           <h3> CRAFTIFIED</h3>
           <p>
@@ -32,6 +33,30 @@ export default function Projects() {
             </a>
             <a
               href="https://craftified.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              App
+            </a>
+          </div>
+        </span>
+      </ProjectPreview>
+      <ProjectPreview>
+        <img src={wishlistGif} alt="" />
+        <span>
+          <h3> Wishlist (in progress)</h3>
+          <p>Create shared wishlists for Christmas or birthdays.</p>
+          <ListItems stack={WishlistStack} />
+          <div>
+            <a
+              href="https://github.com/kschmitz123/wishlist"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Repository
+            </a>
+            <a
+              href="https://my-wishlist-app.herokuapp.com/"
               target="_blank"
               rel="noreferrer"
             >
