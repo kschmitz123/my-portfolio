@@ -2,7 +2,8 @@ import React from "react";
 import InfoBlock from "../components/InfoBlock";
 import ListItems from "../components/ListItems";
 import ProjectPreview from "../components/ProjectPreview";
-import gif from "../assets/frame-with-video.gif";
+import craftifiedGif from "../assets/frame-with-video.gif";
+import wishlistGif from "../assets/wishlist.gif";
 import { CraftifiedStack, TotalStack, WishlistStack } from "../lib/Stack";
 import styled from "styled-components/macro";
 
@@ -14,7 +15,7 @@ export default function Projects() {
         <ListItems stack={TotalStack} />
       </InfoBlock>
       <ProjectPreview>
-        <img src={gif} alt="" />
+        <img src={craftifiedGif} alt="" />
         <span>
           <h3> CRAFTIFIED</h3>
           <p>
@@ -41,7 +42,7 @@ export default function Projects() {
         </span>
       </ProjectPreview>
       <ProjectPreview>
-        <img src={gif} alt="" />
+        <img src={wishlistGif} alt="" />
         <span>
           <h3> Wishlist (in progress)</h3>
           <p>Create shared wishlists for Christmas or birthdays.</p>
