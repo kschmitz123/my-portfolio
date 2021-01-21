@@ -33,3 +33,15 @@ export const CraftifiedStack: string[] = [
   "git workflow",
   "storybook",
 ];
+export const WishlistStack: string[] = [
+  "react",
+  "react router",
+  "react hook form",
+  "styled components",
+  "react query",
+  "node.js",
+  "express",
+  "mongoDB",
+  "heroku",
+  "git workflow",
+];

@@ -3,7 +3,7 @@ import InfoBlock from "../components/InfoBlock";
 import ListItems from "../components/ListItems";
 import ProjectPreview from "../components/ProjectPreview";
 import gif from "../assets/frame-with-video.gif";
-import { CraftifiedStack, TotalStack } from "../lib/Stack";
+import { CraftifiedStack, TotalStack, WishlistStack } from "../lib/Stack";
 import styled from "styled-components/macro";
 
 export default function Projects() {
@@ -32,6 +32,30 @@ export default function Projects() {
             </a>
             <a
               href="https://craftified.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              App
+            </a>
+          </div>
+        </span>
+      </ProjectPreview>
+      <ProjectPreview>
+        <img src={gif} alt="" />
+        <span>
+          <h3> Wishlist (in progress)</h3>
+          <p>Create shared wishlists for Christmas or birthdays.</p>
+          <ListItems stack={WishlistStack} />
+          <div>
+            <a
+              href="https://github.com/kschmitz123/wishlist"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Repository
+            </a>
+            <a
+              href="https://my-wishlist-app.herokuapp.com/"
               target="_blank"
               rel="noreferrer"
             >
