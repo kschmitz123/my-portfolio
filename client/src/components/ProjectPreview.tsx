@@ -25,6 +25,7 @@ const Container = styled.div`
     background-color: var(--accent-color);
     text-decoration: none;
     color: var(--main-color);
+    box-shadow: grey 0px 2px 0px;
   }
   div {
     margin-top: 20px;

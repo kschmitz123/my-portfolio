@@ -29,7 +29,7 @@ const experience: Object[] = [
       "Eigenständige Bearbeitung von Aufträgen sowie Koordination und Organisation von Übersetzungs- und Dolmetschprojekten",
       " Erstellung von Angeboten, Aufragsbestämgungen, Abrechnung",
       " Projektüberwachung und Prozessoptmierung ",
-      "Täglicher Kundenkontakt, Kundenbesuche Arbeiten mit Tools, Dateihandling",
+      "Täglicher Kundenkontakt, Kundenbesuche Arbeiten mit CAT-Tools, Dateihandling",
     ],
     img: `${manage}`,
   },
