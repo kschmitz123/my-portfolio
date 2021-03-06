@@ -4,7 +4,13 @@ import ListItems from "../components/ListItems";
 import ProjectPreview from "../components/ProjectPreview";
 import craftifiedGif from "../assets/frame-with-video.gif";
 import wishlistGif from "../assets/wishlist.gif";
-import { CraftifiedStack, TotalStack, WishlistStack } from "../lib/Stack";
+import wizardScreenshot from "../assets/screenshot_wizard_sheet.png";
+import {
+  CraftifiedStack,
+  TotalStack,
+  WishlistStack,
+  WizardStack,
+} from "../lib/Stack";
 import styled from "styled-components/macro";
 
 export default function Projects() {
@@ -33,6 +39,30 @@ export default function Projects() {
             </a>
             <a
               href="https://craftified.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              App
+            </a>
+          </div>
+        </span>
+      </ProjectPreview>
+      <ProjectPreview>
+        <img src={wizardScreenshot} alt="" />
+        <span>
+          <h3> Wizard Sheet</h3>
+          <p>Digitaler Begleiter zum Würfelspiel Wizard</p>
+          <ListItems stack={WizardStack} />
+          <div>
+            <a
+              href="https://github.com/kschmitz123/wizard-sheet"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Repository
+            </a>
+            <a
+              href="https://wizard-sheet.kschmitz123.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >

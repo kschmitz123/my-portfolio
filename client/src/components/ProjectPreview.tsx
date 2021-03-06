@@ -17,6 +17,7 @@ const Container = styled.div`
   border-radius: 15px;
   box-shadow: 4px 8px 19px -6px rgba(0, 0, 0, 0.75);
   color: var(--main-color);
+  width: 90%;
 
   a {
     border-radius: 15px;
