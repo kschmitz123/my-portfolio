@@ -45,3 +45,10 @@ export const WishlistStack: string[] = [
   "heroku",
   "git workflow",
 ];
+export const WizardStack: string[] = [
+  "react",
+  "styled components",
+  "pwa",
+  "vercel",
+  "git workflow",
+];
